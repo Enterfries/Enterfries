@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "standard"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "rules": {
+    "comma-dangle": ["error", {
+      "arrays": "always-multiline",
+      "objects": "always-multiline",
+      "imports": "always-multiline",
+      "functions": "never"
+    }],
+    "no-multiple-empty-lines": ["error", {
+      "max": 2
+    }],
+    "strict": ["error", "global"]
+  }
+}

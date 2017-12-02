@@ -16,5 +16,4 @@ microservices architecture.
 4. Strong naming conventions (to avoid confusion about where functionality
    should live)
 5. Application logging (Server and client)
-6. Typescript with a compiler options best suited to many developers and long
-   lived applications.
+6. Types for both Flow and Typescript

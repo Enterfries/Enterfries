@@ -1,0 +1,32 @@
+{
+  "name": "@enterfries/logger",
+  "version": "0.0.9",
+  "description": "A logging module for applications that are designed and developed to run inside containerized infrastructure like Docker.",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "babel --delete-dir-on-start --config-path ../.babelrc --source-root . -d ./lib ./src --source-maps",
+    "build:watch": "npm run -s -- build -w",
+    "test": "npm run -s postinstall && ava lib/**/__test__/**/*.js",
+    "test:watch": "npm run -s test -- --watch",
+    "postinstall": "npm run -s build -- --quiet"
+  },
+  "author": "Enterfries",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.24.0",
+    "babel-eslint": "^8.0.2",
+    "eslint": "^4.12.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "sinon": "^4.1.2"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.0.0-beta.33",
+    "@babel/core": "^7.0.0-beta.33",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.33",
+    "@babel/preset-env": "^7.0.0-beta.33"
+  }
+}
