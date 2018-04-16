@@ -1,6 +1,6 @@
 {
   "name": "@enterfries/logger",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "A logging module for applications that are designed and developed to run inside containerized infrastructure like Docker.",
   "main": "./lib/index.js",
   "scripts": {
