@@ -1,7 +1,7 @@
 {
   "name": "@enterfries/logger",
-  "version": "0.0.9",
-  "description": "A logging module for applications that are designed and developed to run inside containerized infrastructure like Docker.",
+  "version": "0.1.0",
+  "description": "A logging module for node applications that are designed and developed to run inside containerized infrastructure like Docker.",
   "main": "./lib/index.js",
   "scripts": {
     "build": "babel --delete-dir-on-start --config-path ../.babelrc --source-root . -d ./lib ./src --source-maps",
